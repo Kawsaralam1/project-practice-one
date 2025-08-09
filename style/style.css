@@ -163,3 +163,27 @@ main section{
     width: 204px;
     height: 243px;
 }
+/* resume section style  */
+.resume-container{
+    display:flex;
+    gap:24px;
+}
+.education-title{
+    font-size:25px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+.education-sub-title{
+    font-size:20px;
+    font-weight:400;
+    margin-bottom:20px;
+}
+.education-description, .education-sub-title{
+    color: rgba(117, 117, 117, 1);
+}
+.resume hr{
+    margin:30px 5px;
+}
+.download-cv{
+    margin-top:50px;
+}
