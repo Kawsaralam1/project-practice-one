@@ -32,7 +32,7 @@
 }
 /* header styles  */
 .header{
-    background-image:url('../images/header_bg.png'),url(../images/developer.png);
+    background-image:url(../images/header_bg.png),url(../images/developer.png);
     background-repeat: no-repeat;
     background-position: bottom right, top left;
 }
@@ -202,7 +202,7 @@ footer{
     font-size: 30px;
     font-weight: 600;
 }
-footer input[type="text"],input[type="email"],textarea{
+footer input[type="text"], input[type="email"], textarea{
     background-color:white;
     border-radius:5px;
     display:block;
@@ -213,4 +213,20 @@ footer input[type="text"],input[type="email"],textarea{
     font-size:16px;
     margin-bottom:18px;
     
+}
+@media screen and (max-width:576px) {
+    .skills-container, .resume-container, .about-items, footer{
+        flex-direction: column;
+    }
+
+    footer, .about {
+        padding:20px;
+    }
+    .footer-column{
+        width:100%;
+    }
+
+    footer input[type="text"], input[type="email"],textarea{
+        width:calc(100% - 40px);
+    }
 }
